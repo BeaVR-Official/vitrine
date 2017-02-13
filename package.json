@@ -1,11 +1,16 @@
 {
   "name": "vitrine",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "Vitrine website of BeaVR Project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/http-server/bin/http-server ."
+    "start": "http-server ./"
+  },
+   "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0"
   },
   "repository": {
     "type": "git",
