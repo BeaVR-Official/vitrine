@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<!-- Drew - A Multipurpose Landing Page Template, designed by David Rozando (http://design.davidrozando.com) -->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- BASIC INFO -->
+	<title>BeaVR Project</title>
+	<meta name="author" content="Desmars Sliman, Girard Nicolas, Raballand Thomas">
+	<meta name="keywords" content="beavr, virtual reality, eip">
+	<meta name="description" content="Site du projet BeaVR">
+
+	<!-- FAVICONS -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+	<!-- ================================= -->
+
+	<!-- GOOGLE FONTS -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+	<!-- LIBRARIES CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<!-- SPECIFIC CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link id="color-css" rel="stylesheet" href="css/colors/blue.css">
+
+</head>
+<body class="enable-animations">
+<div class="modal fade modal-success" tabindex="-1" role="dialog" aria-labelledby="SmallModalLabel">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-body" style="text-align:center;">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">x</span>
+				</button>
+				<img src="images/logos/success.png" style="height: 85px; margin-bottom: 20px;"/>
+				<p>
+					Merci de l'int&eacute;ret port&eacute; &aacute; notre projet.
+					Des nouvelles vous seront bient&ocirc;t communiqu&eacute;es.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade modal-error" tabindex="-1" role="dialog" aria-labelledby="SmallModalLabel">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-body" style="text-align:center;">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">x</span>
+				</button>
+				<img src="images/logos/error.png" style="height: 85px; margin-bottom: 20px;"/>
+				<p>
+					Ouups! Une erreur est survenue. V&eacute;rifiez l'exactitude du mail.
+					Si le probl&egrave;me persiste essayer ult&eacute;rieurement.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="document" class="document">
+
+	<!-- ================================= -->
+	<header id="header" class="header-section section section-dark navbar navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-logo navbar-brand anchor-link" href="#heroTop">
+					<img src="images/logos/beaver-logo-pashd.png"  alt="logos">
+				</a>
+			</div>
+			<nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
+				<!-- NAVIGATION LINKS -->
+				<ul id="header-nav" class="nav navbar-nav">
+					<li><a href="#heroTop" class="hidden">Top</a></li>
+					<li><a href="#heroTop">Le projet</a></li>
+					<li><a href="#products">Concept</a></li>
+					<li><a href="#creator">Creator</a></li>
+					<li><a href="#team">Team</a></li>
+					<!--							<li><a href="#faq">F.A.Q</a></li>
+                                                <li><a href="#team">L'équipe</a></li>
+                                                <li><a href="#testimonial-slider">Valeurs</a></li>-->
+					<li><a href="#hero">Newsletter</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- HERO
+    ================================= -->
+	<section id="heroTop" class="hero-section hero-layout-simple hero-fullscreen section section-dark">
+		<div class="section-background">
+			<!--Image set in css-->
+		</div>
+		<div class="container">
+			<div class="hero-content">
+				<div class="hero-content-inner">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="hero-heading text-center " data-animation="fadeIn">
+								<div class="image-container">
+									<img class="hero-title" src="images/logos/beaver-logo-pashd.png" id="LogoFirst" />
+								</div>
+								<p class="hero-tagline">Au-delà du réel...</p>
+							</div>
+							<p class="hero-buttons text-center">
+								<a href="https://beavr-store.herokuapp.com/app/" class="btn btn-default" data-animation="fadeIn" style="width: 200px; animation-delay: .2s; -webkit-animation-delay: .2s;">Store</a>
+								<a href="http://beavr-creator-build.herokuapp.com/app/" data-animation="fadeIn" class="btn btn-default" style="width: 200px; animation-delay: .7s; -webkit-animation-delay: .7s;">Creator</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- HERO START LINK -->
+		<a href="#products" class="hero-start-link anchor-link"><span class="fa fa-angle-double-down"></span></a>
+	</section>
+	<!-- ================================= -->
+
+	<!--<section id="products" class="hero-section hero-layout-simple section section-dark">
+        <div class="section-background">
+
+            &lt;!&ndash; IMAGE BACKGROUND &ndash;&gt;
+            <div class="section-background-image parallax" data-stellar-ratio="0.4">
+            </div>
+        </div>
+
+        <div class="container">
+            <h2  style="color: white;" class="section-heading text-center">Profiter des dernières versions de notre solution ?</h2>
+            <div class="hero-content">
+                <div class="hero-content-inner">
+                    <div class="table-row row">
+                        <div class="table-cell col-md-6" style="display: none;">
+                            <img src="images/contents/product-image-1.png" alt="" data-animation="fadeInLeft">
+                        </div>
+                        <div class="table-cell col-md-6">
+                            <div class="hero-heading" data-animation="fadeIn">
+                                <h1 class="hero-subtitle"></h1>
+                                <p class="hero-tagline"></p>
+                            </div>
+                            <p class="hero-buttons">
+                                <a id="tryStore" href="#" class="btn btn-lg btn-primary">Essayer le Store</a>
+                                <a id="tryCreator" href="#" class="btn btn-lg btn-primary">Essayer le Creator</a>
+                            </p>
+                            <p class="hero-buttons">
+                                <center><a id="tryDemo" href="#" class="btn btn-lg btn-primary">Essayer la démo</a></center>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+	<!-- ================================= -->
+	<!--
+        <section id="benefits" class="hero-section hero-layout-simple hero-fullscreen" style="height: auto;">
+            <div class="container">
+                <h2 id="Application"  style="color: white;" class="section-heading text-center" style="margin-top: 0;">BeaVR Universe</h2>
+                <div class="benefits-row row vertical-align">
+                    <div class="col-xs-12 col-sm-6 col-md-7">
+                        <div class="wrapper">
+                            <div class="innerPlus">
+                                <img class="img-responsive effect3 hideme" src="images/project/ApplicationMenu.jpg" style="width: auto; max-height: 300px;  border-width: 5px; " />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-5"  >
+                        <div class="wrapper">
+                            <div class="innerMinus hideme">
+                                <figure>
+                                    <p style="color: white; font-family: AppleGothic; font-size: 20px;">
+                                        Découvrez l'univers plus vrai que nature grâce à la réalité virtuelle.<br/>
+                                        Apprenez en vous amusant !
+                                    </p>
+                                </figure>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="benefits-row row vertical-align" style="margin-top: 20px;">
+                    <div class="col-xs-12 col-sm-6 col-md-5" >
+                        <div class="wrapper">
+                            <div class="innerPlus hideme">
+                                <p style="color: white; font-family: AppleGothic; font-size: 22px;">
+                                    Imaginez un univers sans limite...
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-7">
+                        <div class="wrapper">
+                            <div class="innerMinus">
+                                <img class="img-responsive hideme" src="images/project/ApplicationPreview.jpg" style="width: auto; max-height:300px; box-shadow: 4px 4px 5px rgba(10,10,10,0.9);" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#products" class="hero-start-link anchor-link" style="position: absolute !important; bottom: -1225px;"><span class="fa fa-angle-double-down"></span></a>
+        </section>
+    -->
+
+	<section id="products" class="hero-section hero-layout-simple hero-fullscreen" style="height: auto;">
+		<div class="container" style="opacity: 1;">
+			<h2 id="Store"  style="color: white; opacity:1; text-shadow: 2px 2px #100617; font-size: 37px; margin-top:-80px;margin-bottom: 60px;" class="section-heading text-center">Une exp&eacute;rience innovante</h2>
+			<div class="benefits-row row vertical-align">
+				<div class="col-xs-12 col-sm-12 col-md-12 grow" style="margin:auto; text-align:center;">
+					<div class="col-md-4 col-sm-12" style="height: 274px;" data-animation="fadeInLeft" >
+						<span>
+							<div style="border-radius: 50%; width: 84px; height: 84px; background: #40485a; line-height: 3; padding:16px; margin: auto;">
+								<img src="images/logos/thinking-head.png" style="max-width: 64px;"  />
+							</div>
+						</span>
+						<h4 style="color:white;">Cr&eacute;er</h4>
+						<p style="color: black; text-align: justify; padding-left: 20px; padding-right: 20px;">Exprimez votre cr&eacute;ativit&eacute; avec un outil simple et facile d’accès dont la vocation est de permettre à quiconque de d&eacute;velopper une application de r&eacute;alit&eacute; virtuelle...</p>
+					</div>
+					<div class="col-md-4 col-sm-12" style="height: 274px;" data-animation="fadeInDown">
+						<span>
+							<div style="border-radius: 50%; width: 84px; height: 84px; background: #40485a; line-height: 3; padding:17px; margin: auto;">
+								<img src="images/logos/share.png" style="max-width: 64px;"  />
+							</div>
+						</span>
+						<h4 style="color:white;">Partager</h4>
+						<p style="color: black; text-align: justify; padding-left: 20px; padding-right: 20px;">D&eacute;posez vos cr&eacute;ations sur une plate-forme de partage ouverte à tous! </p>
+					</div>
+					<div class="col-md-4 col-sm-12" style="height: 274px;" data-animation="fadeInRight">
+						<span><div style="border-radius: 50%; width: 84px; height: 84px; background: #40485a; line-height: 1; margin: auto; padding:14px;">
+								<img src="images/logos/telescope.png" style="max-width: 64px;"  />
+							</div></span>
+						<h4 style="color:white;">D&eacute;couvrir</h4>
+						<p style="color: black; text-align: justify;padding-left: 20px; padding-right: 20px;">Profitez du riche contenu d&eacute;pos&eacute; par notre communaut&eacute; sans rien avoir à t&eacute;l&eacute;charger. Un nouveau monde est à votre port&eacute;e!</p>
+					</div>
+				</div>
+			</div>
+			<a href="#creator" class="hero-start-link anchor-link" style="position: absolute !important; bottom: -150px;"><span class="fa fa-angle-double-down"></span></a>
+		</div>
+	</section>
+
+	<section id="creator" class="hero-section hero-layout-simple section section-dark">
+		<div class="section-background">
+
+			<!-- IMAGE BACKGROUND -->
+			<div class="section-background-image parallax" data-stellar-ratio="0.4">
+				<img src="http://static.simpledesktops.com/uploads/desktops/2015/03/27/1.png" alt="" style="opacity: 0.2;">
+			</div>
+		</div>
+
+		<div class="container">
+			<h2 style="color: white; opacity:1; text-shadow: 2px 2px #100617; font-size: 37px; margin-top:-80px;margin-bottom: 60px;" class="section-heading text-center">L'outil de création</h2>
+			<div class="hero-content">
+				<div class="hero-content-inner">
+					<div class="table-row row">
+						<div class="table-cell col-md-12">
+							<div class="col-md-4 col-lg-5" style="line-height: 25; margin-bottom:10%;">
+								<img src="images/project/creator.png" alt="" data-animation="fadeInLeft">
+							</div>
+							<div class="col-md-8 col-lg-7" style="text-align: center;">
+								<div class="row" style="text-align: center;">
+									<div style="display: inline-block; text-align: left">
+										<div class="queryImg" data-animation="fadeIn" style="animation-delay: 0s; -webkit-animation-delay: 0s;">
+											<span>
+												<div style="border-radius: 50%; width: 66px; height: 66px; background: #5b7bae; line-height: 1; margin: auto; padding:15px; " >
+													<img src="images/logos/profit-chart.png" style="max-width: 36px;"  />
+												</div>
+											</span>
+											<p style="display: inline-block; font-size: 20px; margin-left: 46px;">Stimule la cr&eacute;ativit&eacute;</p>
+										</div>
+										<br />
+										<div class="queryImg" data-animation="fadeIn" style="animation-delay: 0.2s; -webkit-animation-delay: 0.2s;">
+											<span>
+												<div  style="border-radius: 50%; width: 66px; height: 66px; background: #5b7bae; line-height: 1; margin: auto; padding:15px; ">
+													<img src="images/logos/clap.png" style="max-width: 36px;"  />
+												</div>
+											</span>
+											<p style="display: inline-block; font-size: 20px; margin-left: 46px;">Facile à prendre en main et à utiliser</p>
+										</div>
+										<br/>
+										<div class="queryImg" data-animation="fadeIn" style="animation-delay: 0.4s; -webkit-animation-delay: 0.4s;">
+											<span>
+												<div  style="border-radius: 50%; width: 66px; height: 66px; background: #5b7bae; line-height: 1; margin: auto; padding:15px; ">
+													<img src="images/logos/virtual-reality.png" style="max-width: 36px;"  />
+												</div>
+											</span>
+											<p style="display: inline-block; font-size: 20px; margin-left: 46px;">Rend la réalité virtuelle accessible à tous </p>
+										</div>
+										<br/>
+										<div class="queryImg" data-animation="fadeIn" style="animation-delay: 0.6s; -webkit-animation-delay: 0.6s;">
+											<span>
+												<div  style="border-radius: 50%; width: 66px; height: 66px; background: #5b7bae; line-height: 1; margin: auto; padding:15px; ">
+													<img src="images/logos/charity.png" style="max-width: 36px;"  />
+												</div>
+											</span>
+											<p style="display: inline-block; font-size: 20px; margin-left: 46px; word-wrap: break-word;">Aide d'une communaut&eacute; de novices et d'experts</p>
+										</div>
+										<br/>
+										<!--<div>
+											<span>
+												<div style="border-radius: 50%; width: 66px; height: 66px; background: #5b7bae; line-height: 1; margin: auto; padding:15px; display: inline-block;">
+													<img src="images/logos/charity.png" style="max-width: 36px;"  />
+												</div>
+											</span>
+											<p style="display: inline-block; font-size: 20px; margin-left: 46px;">Aide d'une communaut&eacute; de novices et d'experts</p>
+										</div>-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#team" class="hero-start-link anchor-link" style="position: absolute !important; bottom: -150px;"><span class="fa fa-angle-double-down"></span></a>
+		</div>
+	</section>
+	<!-- ================================= -->
+	<!--
+                <section id="faq" class="faq-section section">
+                    <div class="container">
+                        <h2 style="color: white;" class="section-heading text-center">Questions fréquemment posées</h2>
+                        <div class="benefits-row row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="faq-item">
+                                    <span class="faq-item-icon fa fa-question-circle" data-animation="bounceIn"></span>
+                                    <h4 class="benefit-title">De quel matériel dois-je me munir ?</h4>
+                                    <p class="benefit-description reponseFAQ">Dans un premier temps,
+                                        les premières applications utiliseront l'<b>Occulus Rift</b> et la <b>Leap Motion</b>.
+                                        Cependant, la réalité virtuelle étant un secteur évoluant rapidement,
+                                        nous nous adapterons au nouveau matériel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="faq-item">
+                                    <span class="faq-item-icon fa fa-question-circle" data-animation="bounceIn"></span>
+                                    <h4 class="benefit-title">Quel sera le prix des applications téléchargeables ?</h4>
+                                    <p class="benefit-description reponseFAQ">Nous sommes conscient du prix du matériel de réalité virtuelle,
+                                        c'est pour cela qu'une grande partie de nos applications seront gratuites.
+                                        Quant aux applications publiées sur notre <b>Store</b>, libre aux développeurs de choisir le prix.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hidden-md hidden-lg clear"></div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="faq-item">
+                                    <span class="faq-item-icon fa fa-question-circle" data-animation="bounceIn"></span>
+                                    <h4 class="benefit-title">Je n'ai aucunes connaissances informatiques, que faire ?</h4>
+                                    <p class="benefit-description reponseFAQ">
+                                        Car la majeure partie de nos utilisateurs n'a aucunes connaissances informatiques,
+                                        nous proposons un <b>Creator</b> user-friendly,
+                                        simple, pour que n'importe qui puisse créer une application
+                                        permettant de partager ses connaissances.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hidden-sm clear"></div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="faq-item">
+                                    <span class="faq-item-icon fa fa-question-circle" data-animation="bounceIn"></span>
+                                    <h4 class="benefit-title">Je suis adepte des technologies Mac ou Linux. Cela limitera-t-il mon utilisation de BeaVR ?</h4>
+                                    <p class="benefit-description reponseFAQ">
+                                        <b>BeaVR</b> est conçu pour être compatible avec tous les systèmes.
+                                        Dans un premier temps nous sortirons une version pour Windows.
+                                        Puis nous sortirons des versions compatibles avec Mac et Linux
+                                         très peu de temps après.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="faq-item">
+                                    <span class="faq-item-icon fa fa-question-circle" data-animation="bounceIn"></span>
+                                    <h4 class="benefit-title">Mes informations sont-elles en sécurité ?</h4>
+                                    <p class="benefit-description reponseFAQ">
+                                        La confidentialité et la sécurité de nos utilisateurs est primordiale.
+                                        Nous avons travaillé afin de rendre notre système
+                                        le plus sécurisé possible. Ainsi, toutes vos informations
+                                        sont <b>cryptée</b> afin d'en assurer la protection contre
+                                        les personnes malintentionnées.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hidden-md hidden-lg clear"></div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="faq-item">
+                                    <span class="faq-item-icon fa fa-question-circle" data-animation="bounceIn"></span>
+                                    <h4 class="benefit-title">Je n’apprécie pas une application, Puis-je me faire rembourser ?</h4>
+                                    <p class="benefit-description reponseFAQ">
+                                        Le contenu présenté sur le <b>Store</b> étant détaillé,
+                                        nous ne prévoyons pas de droit de rétractation.
+                                        Cependant, si une application dispose de contenu
+                                        inapproprié n’hésitez pas à nous contacter
+                                        afin que nous puissions gérer le litige.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hidden-sm clear"></div>
+                            </div>
+                    </div>
+                </section>
+    -->
+	<!-- Equipe -->
+	<section id="team" class="team-section section" style="padding: 160px 0;">
+		<div class="section-background">
+
+			<!-- IMAGE BACKGROUND http://wallpapercave.com/wp/0elB2hj.jpg -->
+			<div class="section-background-image parallax" data-stellar-ratio="0.4"><!--http://moparx.com/files/images/newton-wallpaper.png-->
+				<img src="http://wallpapercave.com/wp/0elB2hj.jpg" alt="" style="opacity: 0.2;">
+			</div>
+		</div>
+		<div class="container-fluid" style="z-index: 30;">
+			<h2 style="color: white; opacity:1; text-shadow: 2px 2px #100617; font-size: 37px; margin-top:-80px;margin-bottom: 60px;" class="section-heading text-center">L'équipe</h2>
+			<div class="row" style="margin-bottom: 30px; text-align:center;">
+				<div data-animation="fadeInLeft" style="animation-delay: 0s; -webkit-animation-delay: 0s;" class="col-lg-3 col-md-4 col-xs-12 col-sm-6">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="our-team">
+									<img src="images/team/elliot.png" alt="">
+									<div class="team-prof">
+										<h3>Elliot KERSAL&Eacute;</h3>
+										<span>Team Leader & Developer</span>
+									</div>
+									<ul class="social-links">
+										<li><a href="https://github.com/ekersale" class="fa fa-github"></a></li>
+										<li><a href="https://fr.linkedin.com/pub/elliot-kersalé/67/a71/8a7" class="fa fa-linkedin"></a></li>
+										<li><a href="https://plus.google.com/u/0/105573185651924114088/posts" class="fa fa-google-plus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-animation="fadeInLeft" style="animation-delay: 0.4s; -webkit-animation-delay: 0.4s;" class="col-lg-3 col-md-4 col-xs-12 col-sm-6">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="our-team">
+									<img src="images/team/thomas.jpg" alt="">
+									<div class="team-prof">
+										<h3>Thomas RABALLAND</h3>
+										<span>Software developer</span>
+									</div>
+									<ul class="social-links">
+										<li><a href="https://www.facebook.com/t.raballand" class="fa fa-facebook"></a></li>
+										<li><a href="https://fr.linkedin.com/in/raballandthomas/fr" class="fa fa-linkedin"></a></li>
+										<li><a href="https://plus.google.com/u/0/+ThomasRaballand/posts" class="fa fa-google-plus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-animation="fadeInLeft" style="animation-delay: 0.8s; -webkit-animation-delay: 0.8s;" class="col-lg-3 col-md-4 col-xs-12 col-sm-6">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="our-team">
+									<img src="images/team/pa.jpg" alt="">
+									<div class="team-prof">
+										<h3>Pierre-Antoine URVOY</h3>
+										<span>Software developer</span>
+									</div>
+									<ul class="social-links">
+										<li><a href="https://www.facebook.com/pierrot.56" class="fa fa-facebook"></a></li>
+										<li><a href="https://plus.google.com/u/0/117854018286028663867" class="fa fa-google-plus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-animation="fadeInLeft" style="animation-delay: 1.2s; -webkit-animation-delay: 1.2s;" class="col-lg-3 col-md-4 col-xs-12 col-sm-6">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="our-team">
+									<img src="images/team/nicolas.jpg" alt="">
+									<div class="team-prof">
+										<h3>Nicolas GIRARD</h3>
+										<span>Software developer</span>
+									</div>
+									<ul class="social-links">
+										<li><a href="https://www.facebook.com/nicolasg37" class="fa fa-facebook"></a></li>
+										<li><a href="https://fr.linkedin.com/in/girardnicolas/fr" class="fa fa-linkedin"></a></li>
+										<li><a href="https://plus.google.com/u/0/+NicolasGIRARDIT" class="fa fa-google-plus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-animation="fadeInLeft" style="animation-delay: 1.6s; -webkit-animation-delay: 1.6s;" class="col-lg-3 col-md-4 col-xs-12 col-sm-6">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="our-team">
+									<img src="images/team/julien.jpg" alt="">
+									<div class="team-prof">
+										<h3>Julien THOMPSON</h3>
+										<span>Software developer</span>
+									</div>
+									<ul class="social-links">
+										<li><a href="https://twitter.com/J3Tom" class="fa fa-twitter"></a></li>
+										<li><a href="https://fr.linkedin.com/pub/julien-thompson/5b/6a0/952/fr" class="fa fa-linkedin"></a></li>
+										<li><a href="https://plus.google.com/u/0/116807319684013568130" class="fa fa-google-plus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-animation="fadeInLeft" style="animation-delay: 2.0s; -webkit-animation-delay: 2.0s;" class="col-lg-3 col-md-4 col-xs-12 col-sm-6">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="our-team">
+									<img src="images/team/sliman.jpg" alt="">
+									<div class="team-prof">
+										<h3>Sliman DESMARS</h3>
+										<span>Com' manager</span>
+									</div>
+									<ul class="social-links">
+										<li><a href="https://github.com/Aurora49" class="fa fa-github"></a></li>
+										<li><a href="https://fr.linkedin.com/in/desmarssliman" class="fa fa-linkedin"></a></li>
+										<li><a href="https://plus.google.com/+NapstersDesmars" class="fa fa-google-plus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-animation="fadeInLeft" style="animation-delay: 2.4s; -webkit-animation-delay: 2.4s;" class="col-lg-3 col-md-4 col-xs-12 col-sm-6">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="our-team">
+									<img src="images/team/damien.jpg" alt="">
+									<div class="team-prof">
+										<h3>Damien GIRAUDET</h3>
+										<span>Software developer</span>
+									</div>
+									<ul class="social-links">
+										<li><a href="https://twitter.com/DGiraudet9" class="fa fa-twitter"></a></li>
+										<li><a href="https://fr.linkedin.com/in/damiengiraudet/fr" class="fa fa-linkedin"></a></li>
+										<li><a href="https://plus.google.com/u/0/115312501461054519319" class="fa fa-google-plus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-animation="fadeInLeft" style="animation-delay: 2.8s; -webkit-animation-delay: 2.8s;" class="col-lg-3 col-md-4 col-xs-12 col-sm-6">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="our-team">
+									<img src="images/team/vincent.jpg" alt="">
+									<div class="team-prof">
+										<h3>Vincent THIBAUD</h3>
+										<span>Software developer</span>
+									</div>
+									<ul class="social-links">
+										<li><a href="https://twitter.com/VincentThibaud" class="fa fa-twitter"></a></li>
+										<li><a href="https://fr.linkedin.com/in/vthibaud/fr" class="fa fa-linkedin"></a></li>
+										<li><a href="https://plus.google.com/u/0/108109254352584527127" class="fa fa-google-plus"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#hero" class="hero-start-link anchor-link" style="position: absolute !important; bottom: -150px;"><span class="fa fa-angle-double-down"></span></a>
+		</div>
+	</section>
+	<!-- ================================= -->
+	<!--
+                <section id="testimonial-slider" class="testimonial-slider-section section-dark section">
+                    <div class="section-background">
+                        <div class="section-background-image parallax" data-stellar-ratio="0.4">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class="section-heading text-center hidden">Trusted by Thousands</h2>
+                        <div class="testimonial-slider-row row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <ul class="testimonial-slider rslides" data-speed="800" data-timeout="4000" data-auto="false">
+                                    <div class="testimonial-slide">
+                                        <span class="testimonial-ratings">
+                                        </span>
+                                        <blockquote class="testimonial-quote">
+                                            <p>We are making a long term bet that immersive virtual and augmented reality will become a part of people's daily lives.</p>
+                                        </blockquote>
+                                        <cite class="testimonial-cite">Mark Zuckerberg, CEO of Facebook</cite>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sponsors-row" data-animation="bounceIn">
+                            <img src="images/contents/logo/epitech.png" alt="epitech">
+                            <img src="images/contents/logo/eart.png" alt="eart">
+                            <img src="images/contents/logo/eip.png" alt="eip">
+                        </div>
+                    </div>
+                </section>
+    -->
+	<!-- ================================= -->
+	<section id="hero" class="hero-section hero-layout-classic hero-layout-video-and-form section section-dark">
+		<div class="section-background">
+			<div class="section-background-image parallax" data-stellar-ratio="0.4">
+				<img src="images/backgrounds/Network-background-2.jpg" alt="" style="opacity: 0.2;">
+			</div>
+		</div>
+		<div class="container">
+			<div class="hero-content">
+				<div class="hero-content-inner">
+					<div class="hero-heading text-center row" data-animation="fadeIn">
+						<div class="col-md-10 col-md-offset-1">
+							<h2 style="color: white; opacity:1; text-shadow: 2px 2px #100617; font-size: 37px; margin-top:-80px;margin-bottom: 60px;" class="section-heading text-center">Plus encore...</h2>
+						</div>
+					</div>
+					<div class="hero-features row">
+						<div class="hero-features-left col-md-7">
+							<div class="">
+								<blockquote class="twitter-tweet" data-lang="fr"><p lang="fr" dir="ltr">Bravo à <a href="https://twitter.com/hashtag/BeaVR?src=hash">#BeaVR</a> gagnant du trophée EIP nantais. Go pour pitcher pendant le forum <a href="https://twitter.com/hashtag/EpitechXP2016?src=hash">#EpitechXP2016</a> à Paris les 25-26 novembre <a href="https://t.co/xxSEURaapG">pic.twitter.com/xxSEURaapG</a></p>&mdash; Epitech Nantes (@EpitechNantes) <a href="https://twitter.com/EpitechNantes/status/789118082052657152">20 octobre 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</div>
+						</div>
+						<div class="hero-features-right col-md-5" data-animation="fadeIn">
+							<div style="padding: 30px; background-color: rgba(0,0,0,0.4);" >
+								<h4 class="form-heading">S'inscrire à la newsletter</h4>
+								<div class="form-validation alert"></div>
+								<div class="form-group">
+									<label for="form-name">Nom</label>
+									<input type="text" name="nom" id="form-nom" class="form-control" placeholder="Votre nom" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<label for="form-email">Prénom</label>
+									<input type="text" name="prenom" id="form-prenom" class="form-control" placeholder="Votre prénom" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<label for="form-email">Email</label>
+									<input type="email" name="email" id="form-email" class="form-control" placeholder="adresse@domain.com" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<button id="inscription" class="btn btn-primary btn-lg btn-block" data-loading-text="Action Button">S'inscrire</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================================= -->
+	<section id="footer" class="footer-section section">
+		<div class="container">
+			<div class="footer-socmed">
+				<a href="https://twitter.com/BeaVR_Officiel/following" target="_blank"><span class="fa fa-twitter"></span></a>
+				<a href="https://www.facebook.com/BeavrOfficiel" target="_blank"><span class="fa fa-facebook"></span></a>
+				<a href="https://www.linkedin.com/company/beavr-project" target="_blank"><span class="fa fa-linkedin"></span></a>
+				<a href="mailto:contact@beavr.fr" target="_blank"><span class="fa fa-envelope"></span></a>
+			</div>
+			<div class="footer-copyright">
+				&copy; 2015-2016 BeaVR, tous droits réservés.
+			</div>
+		</div>
+	</section>
+</div>
+<!-- ================================= -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/respimage.min.js"></script>
+<script src="js/smoothscroll.min.js"></script>
+<script src="js/jquery.nav.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<!-- ================================= -->
+<script src="js/script.js"></script>
+<script>
+
+	$("#tryDemo").click(function(){
+		alert("La démo n'est pas encore disponible");
+	});
+
+	$("#tryStore").click(function(){
+		alert("Notre Store n'est pas encore disponible");
+	});
+
+	$("#tryCreator").click(function(){
+		alert("Notre application Creator n'est pas encore disponible");
+	});
+
+	$("#inscription").click(function(){
+		var nom = document.getElementById("form-nom").value;
+		var prenom = document.getElementById("form-prenom").value;
+		var email = document.getElementById("form-email").value;
+
+		if (email == ""){
+			alert("Vous devez enregistrer une addresse valide");
+		} else {
+			$.ajax({
+				type: "POST",
+				url: "http://beavr.fr:3000/api/newsletter/followers",
+				dataType: 'json',
+				data: {lastname: nom, firstname: prenom, email: email},
+				success: (function() {
+					$(".modal-success").modal("show");
+				}),
+				error: (function(err) {
+					$(".modal-error").modal("show");
+				})
+			});
+		}
+	});
+</script>
+</body>
+</html>
